@@ -97,7 +97,8 @@ class MAIN():
                     self.size_4X4.is_clicked(pygame.mouse.get_pos())
                     self.size_5X5.is_clicked(pygame.mouse.get_pos())
                     self.size_3X3.is_clicked(pygame.mouse.get_pos())
-                    self.win.is_clicked(pygame.mouse.get_pos())
+                    if self.is_win:
+                        self.win.is_clicked(pygame.mouse.get_pos())
 
                 if not self.name_set:
                     if event.type == pygame.KEYDOWN:
